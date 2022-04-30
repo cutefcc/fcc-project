@@ -1,0 +1,27 @@
+{
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "testpathIgnorePatterns": [
+        "/node_modules/"
+    ],
+    "coverageReporters": [
+        "json",
+        "lcov"
+    ],
+    "collectCoverageFrom": [
+        "**/src/**"
+    ],
+    "transform": {
+        "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "node"
+    ]
+}

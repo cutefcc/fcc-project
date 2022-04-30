@@ -1,0 +1,50 @@
+{
+  "name": "fcc-libs",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "parcel example/index.html",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
+    "clean": "lerna clean && rm -rf node_modules",
+    "packages:diff": "lerna diff",
+    "packages:list": "lerna ls -l",
+    "packages:changed": "lerna changed",
+    "packages:build": "lerna run --stream --sort build",
+    "publish": "lerna publish",
+    "autoPublish": "lerna publish --conventional-commits --yes",
+    "lint": "eslint --ext .ts packages",
+    "fcc:version": "lerna version",
+    "lib:test": "node scripts/test.js",
+    "lib:uitest": "majestic"
+  },
+  "publishConfig": {
+    "registry": "http://nexus:8081/repository/npm-hosted/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "lerna": "^4.0.0",
+    "majestic": "^1.8.1"
+  },
+  "dependencies": {
+    "@darkobits/lolcatjs": "3.1.3",
+    "@tsconfig/recommended": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "figlet": "^1.5.2",
+    "jest": "^27.5.1",
+    "minimist": "^1.2.6",
+    "ora": "4.0.4",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
+}

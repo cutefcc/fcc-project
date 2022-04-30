@@ -1,0 +1,23 @@
+{
+  "name": "@fcc/home",
+  "version": "1.0.0",
+  "description": "我是首页🍎， 负责首页主业务",
+  "author": "liuhao <liuhao@taou.com>",
+  "homepage": "",
+  "type": "module",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@fcc/core": "^1.0.0"
+  }
+}

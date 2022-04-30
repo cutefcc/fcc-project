@@ -1,0 +1,7 @@
+packages/**/node_modules/
+packages/**/dist/
+docs/
+scripts/
+coverage/
+node_modules/
+jest.setup.js
