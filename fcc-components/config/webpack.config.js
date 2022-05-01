@@ -150,7 +150,7 @@ module.exports = function (webpackEnv) {
                 ]
               : [
                   "postcss-import",
-                  "tailwindcss/nesting",
+                  "@tailwindcss/nesting",
                   "tailwindcss",
                   "postcss-flexbugs-fixes",
                   [
