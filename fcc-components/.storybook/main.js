@@ -2,6 +2,7 @@ const { resolve } = require("path");
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
+    "storybook-addon-themes",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
@@ -14,6 +15,10 @@ module.exports = {
       },
     },
   ],
+  // react 组件分包编译
+  features: {
+    storyStoreV7: true,
+  },
   framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-webpack5",
@@ -23,16 +28,6 @@ module.exports = {
       ...config.resolve.alias,
       "@": [resolve(__dirname, "../src"), resolve(__dirname, "../")],
     };
-    // config.module.rules.push({
-    //   test: /\.css/,
-    //   use: [
-    //     "style-loader",
-    //     "css-loader",
-    //     {
-    //       loader: "postcss-loader",
-    //     },
-    //   ],
-    // });
     return config;
   },
 };

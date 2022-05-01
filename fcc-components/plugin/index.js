@@ -11,14 +11,14 @@ const fccComponents = plugin(
     );
     // 把fccStyles 给注到全局css里面
     addComponents(fccStyles);
-  },
-  {
-    theme: {
-      color: {
-        // <div class="bg-fcc-select-hover"></div>
-        "fcc-select-hover": "var(--sc-bgcolor)",
-      },
-    },
   }
+  // {
+  // theme: {
+  // color: {
+  // <div class="bg-fcc-select-hover"></div>
+  //   "fcc-select-hover": "var(--sc-bgcolor)",
+  // },
+  // },
+  // }
 );
 module.exports = fccComponents;

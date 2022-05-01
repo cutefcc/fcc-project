@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 #root {
   padding: 20px;
+  /* background: var(--sc-bgcolor); */
 }
-body {
+.theme-dark,
+.theme-light {
   background: var(--sc-bgcolor);
 }

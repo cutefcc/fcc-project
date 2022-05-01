@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "emotion-theming": "^11.0.0",
+    "shelljs": "^0.8.5",
+    "storybook-addon-themes": "^6.1.0"
+  }
+}
