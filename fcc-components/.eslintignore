@@ -1,0 +1,11 @@
+node_modules/
+.storybook/
+.idea/
+dist/
+docs/
+config/
+tests/
+.eslintrc
+src/stories
+tailwind.config.js
+*.js
