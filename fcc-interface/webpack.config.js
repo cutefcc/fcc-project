@@ -11,7 +11,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const WebpackBar = require("webpackbar");
 const webpackBaseConfig = {
   entry: {
-    main: resolve("src/web/index.ts"),
+    main: resolve("src/web/index.tsx"),
   },
   output: {
     path: resolve(process.cwd(), "dist"),
@@ -27,5 +27,8 @@ const webpackBaseConfig = {
       },
     ],
   },
+  resolve: {
+    alias: { "@/*": ["src/*"] },
+  },
 };
-module.exports = merge.default(webpackBaseConfig, _mergeConfig);
+module.exports = merge(webpackBaseConfig, _mergeConfig);
