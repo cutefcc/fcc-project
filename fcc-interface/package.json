@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@mmfcc/home": "1.5.0",
-    "@mmfcc/hooks": "1.3.0",
+    "@mmfcc/hooks": "1.4.0",
     "immer": "^9.0.12",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"

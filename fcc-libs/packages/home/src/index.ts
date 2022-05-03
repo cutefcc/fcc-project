@@ -86,6 +86,7 @@ const fnNormalTask = () => {
           userId: 0,
           user: '',
           error: new Error('test'),
+          data: {},
         });
       }
     }, 1000);

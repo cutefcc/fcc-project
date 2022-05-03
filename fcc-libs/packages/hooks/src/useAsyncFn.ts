@@ -27,7 +27,7 @@ type AsyncState<T> =
 // ReturnType 获取函数返回值的类型
 // 定义那个state
 type StateFromFunctionReturnPromise<T extends FuctionReturnPromise> =
-  AsyncState<ReturnType<T>>;
+  AsyncState<PromiseType<T>>;
 // 返回的那个数组
 type AsyncFnReturn<T extends FuctionReturnPromise> = [
   StateFromFunctionReturnPromise<T>,

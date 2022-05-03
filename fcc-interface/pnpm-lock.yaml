@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@mmfcc/home': 1.5.0
-  '@mmfcc/hooks': 1.3.0
+  '@mmfcc/hooks': 1.4.0
   '@swc/core': ^1.2.147
   '@swc/helpers': ^0.3.10
   '@types/react': ^18.0.8
@@ -23,7 +23,7 @@ specifiers:
 
 dependencies:
   '@mmfcc/home': 1.5.0
-  '@mmfcc/hooks': 1.3.0_01247f91e9370eace2f7fb31b9f6cd3d
+  '@mmfcc/hooks': 1.4.0_01247f91e9370eace2f7fb31b9f6cd3d
   immer: 9.0.12
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -62,8 +62,8 @@ packages:
       xstate: 4.31.0
     dev: false
 
-  /@mmfcc/hooks/1.3.0_01247f91e9370eace2f7fb31b9f6cd3d:
-    resolution: {integrity: sha512-wSTBcqzk9G9H6slyyi09PktsqyGt8HDSJ7rFF531LyMWJGBRO8NLJ7mv1J678+XmK9ZMmn+YmLztk0/kVDBdxg==}
+  /@mmfcc/hooks/1.4.0_01247f91e9370eace2f7fb31b9f6cd3d:
+    resolution: {integrity: sha512-dmqFtsulxQjaxob9tAL3Hr17J//3pMSY7w8zfuIe9xMlnBhEIDDC73vei4sOnB1FMmvM1UFGzus2ZlkCUa1SSQ==}
     peerDependencies:
       immer: ^9.0.12
       react: ^17.0.2
