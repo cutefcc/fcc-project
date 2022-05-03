@@ -85,7 +85,7 @@ const fnNormalTask = () => {
         reject({
           userId: 0,
           user: '',
-          error: new Error('test'),
+          error: new Error('test - 请求失败了'),
           data: {},
         });
       }

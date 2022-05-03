@@ -27,7 +27,7 @@ type AsyncState<T> =
 // ReturnType 获取函数返回值的类型
 // 定义那个state
 type StateFromFunctionReturnPromise<T extends FuctionReturnPromise> =
-  AsyncState<PromiseType<T>>;
+  AsyncState<PromiseType<ReturnType<T>>>;
 // 返回的那个数组
 type AsyncFnReturn<T extends FuctionReturnPromise> = [
   StateFromFunctionReturnPromise<T>,
@@ -72,7 +72,7 @@ export function useAsyncFn<T extends FuctionReturnPromise>(
             console.log('error', error);
             setState(draft => {
               draft.loading = false;
-              draft.error = new Error('数据请求失败');
+              draft.error = error.error;
               draft.value = error;
             });
           }
