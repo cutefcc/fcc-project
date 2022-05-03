@@ -19,10 +19,6 @@
     "lib:test": "node scripts/test.js",
     "lib:uitest": "majestic"
   },
-  "publishConfig": {
-    "registry": "http://nexus:8081/repository/npm-hosted/",
-    "access": "public"
-  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "lerna": "^4.0.0",
