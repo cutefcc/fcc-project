@@ -1,6 +1,6 @@
 import { createMachine, interpret } from 'xstate';
 import str from '@fcc/core';
-console.log('str', str);
+console.log('str11', str);
 type DemoData = {
   userId: number;
   user: string;

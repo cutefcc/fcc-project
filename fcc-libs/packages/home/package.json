@@ -1,5 +1,5 @@
 {
-  "name": "@fcc/home",
+  "name": "@mmfcc/home",
   "version": "1.1.0",
   "description": "我是首页🍎， 负责首页主业务",
   "author": "liuhao <liuhao@taou.com>",
@@ -18,7 +18,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@fcc/core": "^1.1.0",
+    "@mmfcc/core": "^1.1.0",
     "xstate": "^4.31.0"
   }
 }
