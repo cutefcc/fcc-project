@@ -1,6 +1,6 @@
 {
   "name": "@mmfcc/home",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "我是首页🍎， 负责首页主业务",
   "author": "liuhao <liuhao@taou.com>",
   "homepage": "",
@@ -18,7 +18,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@mmfcc/core": "^1.1.0",
+    "@mmfcc/core": "^1.2.0",
     "xstate": "^4.31.0"
   }
 }
