@@ -60,6 +60,7 @@ export function useAsyncFn<T extends FuctionReturnPromise>(
           if (isMountedFn() && callId === lastCallId.current) {
             setState(draft => {
               draft.loading = false;
+              draft.error = undefined;
               draft.value = value;
             });
             return value;
@@ -70,6 +71,7 @@ export function useAsyncFn<T extends FuctionReturnPromise>(
             setState(draft => {
               draft.loading = false;
               draft.error = new Error('数据请求失败');
+              draft.value = undefined;
             });
           }
           return error;

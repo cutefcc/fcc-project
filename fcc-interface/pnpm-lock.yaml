@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@mmfcc/home': 1.4.0
+  '@mmfcc/home': 1.5.0
   '@mmfcc/hooks': 1.3.0
   '@swc/core': ^1.2.147
   '@swc/helpers': ^0.3.10
@@ -22,7 +22,7 @@ specifiers:
   yargs-parser: ^21.0.1
 
 dependencies:
-  '@mmfcc/home': 1.4.0
+  '@mmfcc/home': 1.5.0
   '@mmfcc/hooks': 1.3.0_01247f91e9370eace2f7fb31b9f6cd3d
   immer: 9.0.12
   react: 18.1.0
@@ -55,8 +55,8 @@ packages:
     resolution: {integrity: sha512-a8mCgcC07PUV4POoiudXlR6gYu1pYoptIUwY9OcUEcDPCH1gNIB3Q9h9vSl87KzmVUjlKr/VAz30qq6KVno1Ew==}
     dev: false
 
-  /@mmfcc/home/1.4.0:
-    resolution: {integrity: sha512-4mMsqWJ9kouY/1AfVEmVJQifQ28KG+9bGuK0uVN27KabKd3vzQgGkgFPbFEqOHlUtenZ2K0lHgaDVb9fWUhvog==}
+  /@mmfcc/home/1.5.0:
+    resolution: {integrity: sha512-aUe04Ubzq+lgUAVJDrV0gj7H/XillcnG4GDbgiMFVVlubZdHyf3OOXY35s8CGYwU557iealX4di+z0pLYGjW0A==}
     dependencies:
       '@mmfcc/core': 1.3.0
       xstate: 4.31.0
