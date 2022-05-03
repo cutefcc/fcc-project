@@ -71,7 +71,7 @@ export function useAsyncFn<T extends FuctionReturnPromise>(
             setState(draft => {
               draft.loading = false;
               draft.error = new Error('数据请求失败');
-              draft.value = undefined;
+              draft.value = error;
             });
           }
           return error;

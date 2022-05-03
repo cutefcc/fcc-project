@@ -18,7 +18,7 @@ function App() {
           <div>Error: {state.error.message}</div>
         )}
         {!state.loading && !state.error && (
-          <div>value: {state?.value?.userId}</div>
+          <div>value: {state.value?.userId}</div>
         )}
       </>
       <button onClick={() => doFetch()}>Fetch</button>
