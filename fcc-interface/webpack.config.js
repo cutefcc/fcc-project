@@ -11,7 +11,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const WebpackBar = require("webpackbar");
 const webpackBaseConfig = {
   entry: {
-    main: resolve("src/web/index.tsx"),
+    main: resolve(__dirname, "./src/web/index.tsx"),
   },
   output: {
     path: resolve(process.cwd(), "dist"),
@@ -29,14 +29,13 @@ const webpackBaseConfig = {
   },
   resolve: {
     alias: {
-      "@/*": "src/*",
-      "@components": resolve("src/web/components"),
-      "@constants": resolve("src/web/constants"),
-      "@layouts": resolve("src/web/layouts"),
-      "@pages": resolve("src/web/pages"),
-      "@routers": resolve("src/web/routers"),
-      "@store": resolve("src/web/store"),
-      "@utils": resolve("src/web/utils"),
+      "@components": resolve(__dirname, "./src/web/components"),
+      "@constants": resolve(__dirname, "./src/web/constants"),
+      "@layouts": resolve(__dirname, "./src/web/layouts"),
+      "@pages": resolve(__dirname, "./src/web/pages"),
+      "@routers": resolve(__dirname, "./src/web/routers"),
+      "@store": resolve(__dirname, "./src/web/store"),
+      "@utils": resolve(__dirname, "./src/web/utils"),
     },
     extensions: [".js", ".ts", "tsx", ".jsx", ".css"],
   },

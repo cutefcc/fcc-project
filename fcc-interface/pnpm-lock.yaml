@@ -1,18 +1,18 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@mmfcc/home': ^1.3.0
+  '@mmfcc/home': 1.4.0
   '@mmfcc/hooks': 1.3.0
   '@swc/core': ^1.2.147
   '@swc/helpers': ^0.3.10
   '@types/react': ^18.0.8
   '@types/react-dom': ^18.0.3
   copy-webpack-plugin: ^10.2.4
-  hooks^1.3.0: link:@mmfcc/hooks^1.3.0
   html-webpack-plugin: ^5.5.0
   immer: ^9.0.12
   react: ^18.1.0
   react-dom: ^18.1.0
+  regenerator-runtime: ^0.13.9
   scripty: ^2.1.0
   swc-loader: ^0.2.0
   webpack: ^5.72.0
@@ -22,9 +22,8 @@ specifiers:
   yargs-parser: ^21.0.1
 
 dependencies:
-  '@mmfcc/home': 1.3.0
+  '@mmfcc/home': 1.4.0
   '@mmfcc/hooks': 1.3.0_01247f91e9370eace2f7fb31b9f6cd3d
-  hooks^1.3.0: link:@mmfcc/hooks^1.3.0
   immer: 9.0.12
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -36,6 +35,7 @@ devDependencies:
   '@types/react-dom': 18.0.3
   copy-webpack-plugin: 10.2.4_webpack@5.72.0
   html-webpack-plugin: 5.5.0_webpack@5.72.0
+  regenerator-runtime: 0.13.9
   scripty: 2.1.0
   swc-loader: 0.2.0_@swc+core@1.2.174+webpack@5.72.0
   webpack: 5.72.0_f0320d0f4e9793d244e6d4f95855b04f
@@ -55,8 +55,8 @@ packages:
     resolution: {integrity: sha512-a8mCgcC07PUV4POoiudXlR6gYu1pYoptIUwY9OcUEcDPCH1gNIB3Q9h9vSl87KzmVUjlKr/VAz30qq6KVno1Ew==}
     dev: false
 
-  /@mmfcc/home/1.3.0:
-    resolution: {integrity: sha512-aWobIZIdElYkU8aj9urxmomYqdlQqWvCSRTRM5iLJOd5hAdJ2ivCJ6mzVLm6JJ7f13XWGWtfIPu4eS3BginPmg==}
+  /@mmfcc/home/1.4.0:
+    resolution: {integrity: sha512-4mMsqWJ9kouY/1AfVEmVJQifQ28KG+9bGuK0uVN27KabKd3vzQgGkgFPbFEqOHlUtenZ2K0lHgaDVb9fWUhvog==}
     dependencies:
       '@mmfcc/core': 1.3.0
       xstate: 4.31.0
@@ -1305,6 +1305,10 @@ packages:
     engines: {node: '>= 0.10'}
     dependencies:
       resolve: 1.22.0
+    dev: true
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
     dev: true
 
   /relateurl/0.2.7:
