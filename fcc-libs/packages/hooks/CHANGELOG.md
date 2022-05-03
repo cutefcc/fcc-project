@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.4.0...@mmfcc/hooks@1.5.0) (2022-05-03)
+
+
+### Features
+
+* madify useAsyncFn ([9717450](https://github.com/cutefcc/fcc-project/commit/971745068dfb7570ac54838de4a0149216125c68))
+
+
+
+
+
 # [1.4.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.3.0...@mmfcc/hooks@1.4.0) (2022-05-03)
 
 
