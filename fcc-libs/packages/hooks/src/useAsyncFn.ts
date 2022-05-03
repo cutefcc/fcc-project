@@ -34,7 +34,7 @@ type AsyncFnReturn<T extends FuctionReturnPromise> = [
   T
 ];
 
-export default function useAsycFn<T extends FuctionReturnPromise>(
+export function useAsyncFn<T extends FuctionReturnPromise>(
   fn: T,
   deps: DependencyList = [],
   initialState: StateFromFunctionReturnPromise<T> = {
