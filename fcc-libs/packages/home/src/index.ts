@@ -88,7 +88,7 @@ const toggleService = interpret(machine)
   })
   .start();
 
-toggleService.send('wakes-up');
+// toggleService.send('wakes-up');
 const fnNormalTask = () => {
   return normalTask;
 };

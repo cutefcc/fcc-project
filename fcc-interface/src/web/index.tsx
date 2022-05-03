@@ -4,8 +4,22 @@ import { useAsyncFn } from "@mmfcc/hooks";
 // import App from "./App";
 
 function App() {
-  const [state, doFetch] = useAsyncFn(fnNormalTask);
-  return <div className="App">App</div>;
+  const [state, doFetch] = useAsyncFn(async () => {
+    const res = await fnNormalTask();
+    console.log("res", res);
+    return res;
+  });
+  return (
+    <div className="App">
+      <span>App</span>
+      <>
+        {state.loading && <div>Loading...</div>}
+        {state.error && <div>Error: {state.error.message}</div>}
+        {!state.loading && !state.error && <div>value</div>}
+      </>
+      <button onClick={() => doFetch()}>Fetch</button>
+    </div>
+  );
 }
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

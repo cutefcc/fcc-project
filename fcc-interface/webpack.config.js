@@ -20,7 +20,7 @@ const webpackBaseConfig = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        // include: 'node_modules',
+        // include: /node_modules/,
         use: {
           loader: "swc-loader",
         },
@@ -28,7 +28,17 @@ const webpackBaseConfig = {
     ],
   },
   resolve: {
-    alias: { "@/*": ["src/*"] },
+    alias: {
+      "@/*": "src/*",
+      "@components": resolve("src/web/components"),
+      "@constants": resolve("src/web/constants"),
+      "@layouts": resolve("src/web/layouts"),
+      "@pages": resolve("src/web/pages"),
+      "@routers": resolve("src/web/routers"),
+      "@store": resolve("src/web/store"),
+      "@utils": resolve("src/web/utils"),
+    },
+    extensions: [".js", ".ts", "tsx", ".jsx", ".css"],
   },
 };
 module.exports = merge(webpackBaseConfig, _mergeConfig);

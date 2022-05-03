@@ -2,12 +2,13 @@ lockfileVersion: 5.3
 
 specifiers:
   '@mmfcc/home': ^1.3.0
-  '@mmfcc/hooks': ^1.2.0
+  '@mmfcc/hooks': 1.3.0
   '@swc/core': ^1.2.147
   '@swc/helpers': ^0.3.10
   '@types/react': ^18.0.8
   '@types/react-dom': ^18.0.3
   copy-webpack-plugin: ^10.2.4
+  hooks^1.3.0: link:@mmfcc/hooks^1.3.0
   html-webpack-plugin: ^5.5.0
   immer: ^9.0.12
   react: ^18.1.0
@@ -22,7 +23,8 @@ specifiers:
 
 dependencies:
   '@mmfcc/home': 1.3.0
-  '@mmfcc/hooks': 1.2.0_01247f91e9370eace2f7fb31b9f6cd3d
+  '@mmfcc/hooks': 1.3.0_01247f91e9370eace2f7fb31b9f6cd3d
+  hooks^1.3.0: link:@mmfcc/hooks^1.3.0
   immer: 9.0.12
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -60,8 +62,8 @@ packages:
       xstate: 4.31.0
     dev: false
 
-  /@mmfcc/hooks/1.2.0_01247f91e9370eace2f7fb31b9f6cd3d:
-    resolution: {integrity: sha512-aMhz8UrfOszyXyJpXvpwQPS6HEsoBuafCrPWLg0HR6F6sEl5CI6HhEW4+2uk5ssg0I5L0yNkpNvsPMJwcFKgtA==}
+  /@mmfcc/hooks/1.3.0_01247f91e9370eace2f7fb31b9f6cd3d:
+    resolution: {integrity: sha512-wSTBcqzk9G9H6slyyi09PktsqyGt8HDSJ7rFF531LyMWJGBRO8NLJ7mv1J678+XmK9ZMmn+YmLztk0/kVDBdxg==}
     peerDependencies:
       immer: ^9.0.12
       react: ^17.0.2
