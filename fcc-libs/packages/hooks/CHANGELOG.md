@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.3.0...@mmfcc/hooks@1.4.0) (2022-05-03)
+
+
+### Features
+
+* madify home ([454263a](https://github.com/cutefcc/fcc-project/commit/454263a10ae4a7f369809fd916aea444a02cd231))
+
+
+
+
+
 # [1.3.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.2.0...@mmfcc/hooks@1.3.0) (2022-05-03)
 
 
