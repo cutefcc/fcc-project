@@ -1,5 +1,5 @@
 import { createMachine, interpret } from 'xstate';
-import str from '@fcc/core';
+import str from '@mmfcc/core';
 console.log('str11', str);
 type DemoData = {
   userId: number;
