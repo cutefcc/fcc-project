@@ -37,7 +37,7 @@ const webpackBaseConfig = {
       "@store": resolve(__dirname, "./src/web/store"),
       "@utils": resolve(__dirname, "./src/web/utils"),
     },
-    extensions: [".js", ".ts", "tsx", ".jsx", ".css"],
+    extensions: [".js", ".ts", ".tsx", ".jsx", ".css"],
   },
 };
 module.exports = merge(webpackBaseConfig, _mergeConfig);

@@ -53,6 +53,8 @@ export function useAsyncFn<T extends FuctionReturnPromise>(
       if (!state.loading) {
         setState(draft => {
           draft.loading = true;
+          draft.error = undefined;
+          draft.value = undefined;
         });
       }
       return fn(...args).then(

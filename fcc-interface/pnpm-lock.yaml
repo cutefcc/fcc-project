@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@mmfcc/home': 1.6.0
-  '@mmfcc/hooks': 1.7.0
+  '@mmfcc/home': 1.7.0
+  '@mmfcc/hooks': 1.8.0
   '@swc/core': ^1.2.147
   '@swc/helpers': ^0.3.10
   '@types/react': ^18.0.8
@@ -22,8 +22,8 @@ specifiers:
   yargs-parser: ^21.0.1
 
 dependencies:
-  '@mmfcc/home': 1.6.0
-  '@mmfcc/hooks': 1.7.0_01247f91e9370eace2f7fb31b9f6cd3d
+  '@mmfcc/home': 1.7.0
+  '@mmfcc/hooks': 1.8.0_01247f91e9370eace2f7fb31b9f6cd3d
   immer: 9.0.12
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -55,15 +55,15 @@ packages:
     resolution: {integrity: sha512-a8mCgcC07PUV4POoiudXlR6gYu1pYoptIUwY9OcUEcDPCH1gNIB3Q9h9vSl87KzmVUjlKr/VAz30qq6KVno1Ew==}
     dev: false
 
-  /@mmfcc/home/1.6.0:
-    resolution: {integrity: sha512-fztW14//+bPU5++PkfLN14mksKjKQXSkJ7KpuJWLuLh535fiEjlCKZAAkUK2lqCYq+t5p2d0Cx/pRfYSX7aBGg==}
+  /@mmfcc/home/1.7.0:
+    resolution: {integrity: sha512-a8asat0N3ECJLqwN69q6X4tYSvMxrVYlI4qB69LFOq+tIs/k0+bvST3qaG8bI0PUFLiUlLsiMfHWzs7spFwLeA==}
     dependencies:
       '@mmfcc/core': 1.3.0
       xstate: 4.31.0
     dev: false
 
-  /@mmfcc/hooks/1.7.0_01247f91e9370eace2f7fb31b9f6cd3d:
-    resolution: {integrity: sha512-LcOBnlrWQCkUDK0UAsX4s9cKYeYmeLg4oAv+noXNWgc8vKE5IZX0uIPIfLUGWrWcO5/rgruUc9Zy8yLsQ41VOg==}
+  /@mmfcc/hooks/1.8.0_01247f91e9370eace2f7fb31b9f6cd3d:
+    resolution: {integrity: sha512-HkfTs00ITwRt3Zs7necmb2nR7nPnblaQDHQbxOH3Onva12RNA0lhm8ZXRCMwSWZ7H1o2nwBAHkjV+nqlFq2mxw==}
     peerDependencies:
       immer: ^9.0.12
       react: ^17.0.2

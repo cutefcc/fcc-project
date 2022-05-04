@@ -1,7 +1,7 @@
 {
   "name": "fcc-interface",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/web/index.tsx",
   "scripts": {
     "client:dev": "scripty",
     "client:prod": "scripty",
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "fcc-interface",
   "devDependencies": {
     "@swc/core": "^1.2.147",
     "@swc/helpers": "^0.3.10",
@@ -28,8 +28,8 @@
     "yargs-parser": "^21.0.1"
   },
   "dependencies": {
-    "@mmfcc/home": "1.6.0",
-    "@mmfcc/hooks": "1.7.0",
+    "@mmfcc/home": "1.7.0",
+    "@mmfcc/hooks": "1.8.0",
     "immer": "^9.0.12",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
