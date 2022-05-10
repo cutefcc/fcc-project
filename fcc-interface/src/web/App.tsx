@@ -1,10 +1,10 @@
 import AsyncFn from "./components/AsyncFn";
-import Tearing from "./components/Tearing";
+import JotaiTearing from "./components/JotaiTearing";
 function App() {
   return (
     <div className="App">
       {/* <AsyncFn /> */}
-      <Tearing />
+      <JotaiTearing />
     </div>
   );
 }
