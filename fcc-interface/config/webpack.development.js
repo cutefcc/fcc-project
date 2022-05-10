@@ -1,11 +1,11 @@
 const { join, resolve } = require("path");
 const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const logo = join(__dirname, "icon.png");
+// const logo = join(__dirname, "icon.png");
 // const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const notifier = require("node-notifier");
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin =
+//   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const webpack = require("webpack");
 
 const prot = 3000;
@@ -23,8 +23,8 @@ module.exports = {
     port: prot,
   },
   output: {
-    publicPath: "/",
-    filename: "scripts/[name].bundle.js",
+    publicPath: "",
+    filename: "./scripts/[name].bundle.js",
     assetModuleFilename: "images/[name].[ext]",
   },
   stats: "errors-only",
@@ -37,7 +37,7 @@ module.exports = {
     //   suppressSuccess: true,
     // }),
     new HtmlWebpackPlugin({
-      title: "yd-react-generator",
+      title: "cutefcc-react-generator",
       filename: "index.html",
       template: resolve(__dirname, "../src/web/index-dev.html"),
     }),
