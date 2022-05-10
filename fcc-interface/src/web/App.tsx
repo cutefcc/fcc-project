@@ -7,7 +7,7 @@ function App() {
   });
   return (
     <div className="App">
-      <span>App</span>
+      <span>cutefcc</span>
       <>
         {state.loading && <div>Loading...</div>}
         {state.error && !state.loading && (
