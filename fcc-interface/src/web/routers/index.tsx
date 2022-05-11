@@ -4,37 +4,13 @@ import { lazy, Suspense } from "react";
 const Home = lazy(() => import("@pages/Home"));
 //import Home from '@pages/Home';
 const Courses = lazy(() => import("@pages/Courses"));
-import { Link, RouteObject } from "react-router-dom";
+import { Link, RouteObject, useRoutes } from "react-router-dom";
 const Routes: RouteObject[] = [];
 const Layout = () => (
   <Suspense fallback={<Loading />}>
     <MainLayout />
   </Suspense>
 );
-
-// function Layout() {
-//   return (
-//     <div>
-//       <nav>
-//         <ul>
-//           <li>
-//             <Link to="/">Home</Link>
-//           </li>
-//           <li>
-//             <Link to="/about">About</Link>
-//           </li>
-//           <li>
-//             <Link to="/dashboard/messages">Messages (Dashboard)</Link>
-//           </li>
-//         </ul>
-//       </nav>
-
-//       <hr />
-
-//       <Outlet />
-//     </div>
-//   );
-// }
 
 function NoMatch() {
   return (
@@ -96,4 +72,5 @@ const mainRoutes = {
 };
 
 Routes.push(mainRoutes);
+
 export default Routes;

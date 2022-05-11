@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RecoilRoot } from "recoil";
 // import { fnNormalTask } from "@mmfcc/home";
 // import { useAsyncFn } from "@mmfcc/hooks";
-import App from "./App";
+import App from "@pages/App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
