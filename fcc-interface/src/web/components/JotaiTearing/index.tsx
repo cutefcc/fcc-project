@@ -22,4 +22,4 @@ const JotaiTearing = () => {
     </div>
   );
 };
-export default Tearing;
+export default JotaiTearing;
