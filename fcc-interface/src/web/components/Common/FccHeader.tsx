@@ -12,7 +12,7 @@ const FccHeader: FC = () => {
   // useEffect(() => {
   const init = () => {
     //wasm 计算一个值回来
-    console.log("🐻🐻🐻🐻🐻...", Math.random());
+    console.log("🐻🍎...", Math.random());
   };
   init();
   // }, []);
