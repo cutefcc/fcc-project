@@ -81,7 +81,7 @@ const webpackBaseConfig = {
       "@pages": resolve("src/web/pages"),
       "@layouts": resolve("src/web/layouts"),
       "@assets": resolve("src/web/assets"),
-      "@states": resolve("src/web/states"),
+      "@store": resolve("src/web/store"),
       "@service": resolve("src/web/service"),
       "@utils": resolve("src/web/utils"),
       "@lib": resolve("src/web/lib"),

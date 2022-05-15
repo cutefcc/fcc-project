@@ -29,7 +29,7 @@
       "@layouts/*": ["web/layouts/*"],
       "@service/*": ["web/service/*"],
       "@hooks/*": ["web/hooks/*"],
-      "@states/*": ["web/states/*"],
+      "@store/*": ["web/store/*"],
       "@utils/*": ["web/utils/*"],
       "@lib/*": ["web/lib/*"],
       "@constants/*": ["web/constants/*"]

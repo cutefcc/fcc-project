@@ -6,15 +6,15 @@ const FccHeader: FC = () => {
   const [uppercase] = useAtom(textAtom);
   const [num, setNum] = useState(0);
   // const init = useCallback(() => {}, []);
-  console.log("uppercase: ", uppercase);
+  console.log("header - render");
   // console.log('组件初始化🐻...', Math.random());
   //复杂一点 GC
   // useEffect(() => {
-  const init = () => {
-    //wasm 计算一个值回来
-    console.log("🐻🍎...", Math.random());
-  };
-  init();
+  // const init = () => {
+  //wasm 计算一个值回来
+  // console.log("🐻🍎...", Math.random());
+  // };
+  // init();
   // }, []);
   return (
     <>
