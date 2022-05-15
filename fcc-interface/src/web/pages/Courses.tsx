@@ -6,7 +6,9 @@ import {
   changeState,
   store,
 } from "@store/store";
+
 import create from "zustand";
+// const useStore = create(store);
 const useStore = create(store);
 function Courses() {
   const { name } = useStore();
