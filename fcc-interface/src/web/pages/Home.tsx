@@ -5,7 +5,7 @@ import {
   destroy,
   changeState,
   store,
-} from "@store/store";
+} from "@store/testZustand";
 function Home() {
   return (
     <div>

@@ -30,6 +30,9 @@ const FccHeader: FC = () => {
             <li>
               <Link to="/nothing-here">Nothing Here</Link>
             </li>
+            <li>
+              <Link to="/testJotai">testJotai</Link>
+            </li>
           </ul>
         </nav>
       </div>
