@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.8.0...@mmfcc/hooks@1.9.0) (2022-05-17)
+
+
+### Bug Fixes
+
+* bugs ([c93a6cb](https://github.com/cutefcc/fcc-project/commit/c93a6cb1bd1e227ec8ae37b96f41e2bbc419fefb))
+
+
+### Features
+
+* modify useImmer ([7a9e99e](https://github.com/cutefcc/fcc-project/commit/7a9e99e5f0e215883f5a6a1a8a82b5c288aac343))
+
+
+
+
+
 # [1.8.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.7.0...@mmfcc/hooks@1.8.0) (2022-05-03)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/cutefcc/fcc-project/compare/@mmfcc/home@1.7.0...@mmfcc/home@1.7.1) (2022-05-17)
+
+
+### Bug Fixes
+
+* bugs ([c93a6cb](https://github.com/cutefcc/fcc-project/commit/c93a6cb1bd1e227ec8ae37b96f41e2bbc419fefb))
+
+
+
+
+
 # [1.7.0](https://github.com/cutefcc/fcc-project/compare/@mmfcc/home@1.6.0...@mmfcc/home@1.7.0) (2022-05-03)
 
 
