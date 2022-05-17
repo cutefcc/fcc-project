@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import produce, { freeze, Draft } from "immer";
+import produce, { freeze, Draft } from 'immer';
 export type DraftFunction<S> = (draft: Draft<S>) => void;
 export type Updater<S> = (update: S | DraftFunction<S>) => void;
 export type ImmerHooks<S> = [S, Updater<S>];
@@ -16,15 +16,19 @@ class B implements A {
 export function useImmer<S = unknown>(initValue: S | (() => S)): ImmerHooks<S>;
 
 // 函数实现
-export function useImmer(initValue: unknown) {
-    const [val, setVal] = useState(freeze(typeof initValue === 'function' ? initValue() : initValue, true));
-    // useCallback 的原理是把函数搞到全局，避免传递给子组件时导致memo不生效
-    return [val, useCallback((update) => {
-        if (typeof update === 'function') {
-            setVal(produce(update));
-        } else {
-            setVal(freeze(update));
-        }
-    }, [])];
+export function useImmer<S>(initValue: unknown) {
+  const [val, setVal] = useState(
+    freeze(typeof initValue === 'function' ? initValue() : initValue, true)
+  );
+  // useCallback 的原理是把函数搞到全局，避免传递给子组件时导致memo不生效
+  return [
+    val,
+    useCallback((update: Updater<S>) => {
+      if (typeof update === 'function') {
+        setVal(produce(update));
+      } else {
+        setVal(freeze(update));
+      }
+    }, []),
+  ];
 }
-
