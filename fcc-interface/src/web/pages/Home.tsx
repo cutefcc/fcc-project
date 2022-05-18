@@ -6,12 +6,13 @@
 //   changeState,
 //   store,
 // } from "@store/testZustand";
-import { useImmer } from "@mmfcc/hooks";
-import { memo, useState } from "react";
+import { useImmer } from '@mmfcc/hooks';
+import { memo, useState } from 'react';
 function Home() {
   // const [a, setA] = useImmer({ a: 1 });
   const [a, setA] = useState({ a: 1 });
-  console.log("home render");
+  console.log('home render');
+  console.log(process.env.DB_HOST);
   return (
     <div>
       <h2>Home</h2>
