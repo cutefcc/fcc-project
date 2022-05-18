@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { atom, useAtom } from "jotai";
 import { atomWithImmer, useImmerAtom } from "jotai/immer";
 
-// const store = atomWithImmer({ str: "init str" });
-const store = atom({ str: "init str" });
+const store = atomWithImmer({ str: "init str" });
+// const store = atom({ str: "init str" });
 
 function TestJotai() {
-  const [obj, setObj] = useImmerAtom(store);
-  //   const [obj, setObj] = useAtom(store);
+  // const [obj, setObj] = useImmerAtom(store);
+  const [obj, setObj] = useAtom(store);
 
+  // const [obj, setObj] = useState({ str: "init str" });
   console.log("TestJotai -- render", obj.str);
-  //   const [obj, setObj] = useState({ str: "init str" });
   //   const [obj, setObj] = useAtom(store);
 
   const changeFn = () => {
@@ -29,5 +29,5 @@ function TestJotai() {
     </div>
   );
 }
-
-export default TestJotai;
+TestJotai.whyDidYouRender = true;
+export default memo(TestJotai);

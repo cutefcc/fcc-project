@@ -7,8 +7,10 @@
 //   store,
 // } from "@store/testZustand";
 import { useImmer } from "@mmfcc/hooks";
+import { memo, useState } from "react";
 function Home() {
-  const [a, setA] = useImmer({ a: 1 });
+  // const [a, setA] = useImmer({ a: 1 });
+  const [a, setA] = useState({ a: 1 });
   console.log("home render");
   return (
     <div>
@@ -16,9 +18,10 @@ function Home() {
       {/* <h2>{getState().name}</h2> */}
       <p
         onClick={() => {
-          setA((draft) => {
-            draft.a = 1;
-          });
+          setA({ a: 1 });
+          // setA((draft) => {
+          //   draft.a = 1;
+          // });
         }}
       >
         a: {a.a}
@@ -26,5 +29,5 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
+Home.whyDidYouRender = true;
+export default memo(Home);
