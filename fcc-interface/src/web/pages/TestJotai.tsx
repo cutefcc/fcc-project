@@ -1,8 +1,8 @@
-import { memo, useState } from "react";
-import { atom, useAtom } from "jotai";
-import { atomWithImmer, useImmerAtom } from "jotai/immer";
+import { memo, useState } from 'react';
+import { atom, useAtom } from 'jotai';
+import { atomWithImmer, useImmerAtom } from 'jotai/immer';
 
-const store = atomWithImmer({ str: "init str" });
+const store = atomWithImmer({ str: 'init str' });
 // const store = atom({ str: "init str" });
 
 function TestJotai() {
@@ -10,15 +10,15 @@ function TestJotai() {
   const [obj, setObj] = useAtom(store);
 
   // const [obj, setObj] = useState({ str: "init str" });
-  console.log("TestJotai -- render", obj.str);
+  console.log('TestJotai -- render', obj.str);
   //   const [obj, setObj] = useAtom(store);
 
   const changeFn = () => {
     //jotai 👇这样写还是会重复渲染
     // setObj({ str: "init str new" });
     // write like this, why immer not working
-    setObj((draft) => {
-      draft.str = "init str new";
+    setObj(draft => {
+      draft.str = 'init str new';
     });
   };
   return (
