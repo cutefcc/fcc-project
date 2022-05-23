@@ -10,11 +10,23 @@ module.exports = {
     filename: 'scripts/[name].[contenthash:5].bundule.js',
     assetModuleFilename: 'images/[name].[hash:5][ext]',
   },
+  performance: {
+    maxAssetSize: 250000, // 最大资源大小250KB
+    maxEntrypointSize: 250000, // 最大入口资源大小250KB
+    hints: 'warning', // 超出限制时只给出警告
+  },
   optimization: {
     minimize: true,
     minimizer: [
       new TerserPlugin({
         parallel: os.cpus().length - 1,
+        // minify: TerserPlugin.esbuildMinify,
+        terserOptions: {
+          compress: {
+            drop_console: true,
+            drop_debugger: true,
+          },
+        },
       }),
       new CssMinimizerPlugin({
         parallel: os.cpus().length - 1,
