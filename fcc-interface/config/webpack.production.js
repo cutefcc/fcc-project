@@ -5,7 +5,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   output: {
-    path: join(__dirname, '../dist/assets'),
+    path: join(__dirname, '../dist'),
     publicPath: '/',
     filename: 'scripts/[name].[contenthash:5].bundule.js',
     assetModuleFilename: 'images/[name].[hash:5][ext]',

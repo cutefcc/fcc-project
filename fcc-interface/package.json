@@ -5,7 +5,11 @@
   "scripts": {
     "client:dev": "scripty",
     "client:prod": "scripty",
-    "client:server": "scripty",
+    "client:serve": "scripty",
+    "server:dev": "scripty",
+    "server:prod": "scripty",
+    "dev:build": "scripty",
+    "dev:server": "scripty",
     "lint": "eslint --ext .ts src"
   },
   "keywords": [],
@@ -39,6 +43,7 @@
     "jest-stare": "^2.4.1",
     "mini-css-extract-plugin": "^2.6.0",
     "node-notifier": "^10.0.1",
+    "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
     "regenerator-runtime": "^0.13.9",
     "scripty": "^2.1.0",
@@ -55,10 +60,13 @@
     "yargs-parser": "^21.0.1"
   },
   "dependencies": {
+    "@koa/router": "^10.1.1",
     "@mmfcc/home": "1.7.0",
     "@mmfcc/hooks": "1.9.0",
     "immer": "9.0.14",
     "jotai": "https://pkg.csb.dev/pmndrs/jotai/commit/c6800061/jotai",
+    "koa": "^2.13.4",
+    "koa-static": "^5.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
