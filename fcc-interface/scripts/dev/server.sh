@@ -1,1 +1,1 @@
-nodemon  /src/server/app.ts
+nodemon --inspect /src/server/app.ts
