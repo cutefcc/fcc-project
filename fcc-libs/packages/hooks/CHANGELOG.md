@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.1...@mmfcc/hooks@1.9.2) (2022-06-04)
+
+
+### Bug Fixes
+
+* add useCookie ([7bd3c8b](https://github.com/cutefcc/fcc-project/commit/7bd3c8b6d2522a19842c48aed65752770448df72))
+
+
+
+
+
 ## [1.9.1](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.0...@mmfcc/hooks@1.9.1) (2022-06-04)
 
 
