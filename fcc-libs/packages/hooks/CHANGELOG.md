@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.4](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.3...@mmfcc/hooks@1.9.4) (2022-06-04)
+
+
+### Bug Fixes
+
+* useUnMount ([4da8dd0](https://github.com/cutefcc/fcc-project/commit/4da8dd0675f02f4cce9e61a82ccd2428fa8d5115))
+
+
+
+
+
 ## [1.9.3](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.2...@mmfcc/hooks@1.9.3) (2022-06-04)
 
 
