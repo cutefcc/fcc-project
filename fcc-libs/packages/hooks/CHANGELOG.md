@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.3](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.2...@mmfcc/hooks@1.9.3) (2022-06-04)
+
+
+### Bug Fixes
+
+* useEffectOnce ([9b3a5cb](https://github.com/cutefcc/fcc-project/commit/9b3a5cb1a1d217e9f05b3b40a23ae6916153f12f))
+
+
+
+
+
 ## [1.9.2](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.1...@mmfcc/hooks@1.9.2) (2022-06-04)
 
 
