@@ -1,8 +1,11 @@
 import { memo, useState, useCallback } from 'react';
-import { useCookie } from '@mmfcc/hooks';
+import { useCookie, useEffectOnce } from '@mmfcc/hooks';
 
 function TestReactUse() {
   const [value, updateCookie, deleteCookie] = useCookie('fcc');
+  useEffectOnce(() => {
+    console.log('useEffectOnce');
+  });
   const handleSetCookie = () => {
     updateCookie('1');
   };
