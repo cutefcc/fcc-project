@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@koa/router': ^10.1.1
   '@mmfcc/home': 1.7.0
-  '@mmfcc/hooks': 1.9.0
+  '@mmfcc/hooks': 1.9.1
   '@swc/core': ^1.2.182
   '@swc/helpers': ^0.3.13
   '@types/node': ^17.0.34
@@ -60,7 +60,7 @@ specifiers:
 dependencies:
   '@koa/router': 10.1.1
   '@mmfcc/home': 1.7.0
-  '@mmfcc/hooks': 1.9.0_jkdqxb5yitxj5huay6mreawzqu
+  '@mmfcc/hooks': 1.9.1_u4ij42udqy5uhdmb56v7egtoue
   immer: 9.0.14
   jotai: '@pkg.csb.dev/pmndrs/jotai/commit/c6800061/jotai_immer@9.0.14+react@18.1.0'
   js-cookie: 3.0.1
@@ -893,14 +893,16 @@ packages:
       xstate: 4.31.0
     dev: false
 
-  /@mmfcc/hooks/1.9.0_jkdqxb5yitxj5huay6mreawzqu:
-    resolution: {integrity: sha512-bDt/euS61me2/gRV0Gn0kMFEH7daXC0T79bMjsABaJ+NJ+w6jTXAJtOziVSL8zbd1a4vm0YbqqD0c0dHTM0Edw==}
+  /@mmfcc/hooks/1.9.1_u4ij42udqy5uhdmb56v7egtoue:
+    resolution: {integrity: sha512-nbMKgTaOO1wrFviSKTHHskOjsbT+BstTSJnhYNjcXJJ7faGz6fuBgTwc1Vnp8zabI0x8mqAEx8R6ruXs4cdLAg==}
     peerDependencies:
       immer: ^9.0.12
+      js-cookie: ^3.0.1
       react: ^17.0.2
       react-dom: ^17.0.2
     dependencies:
       immer: 9.0.14
+      js-cookie: 3.0.1
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
     dev: false
