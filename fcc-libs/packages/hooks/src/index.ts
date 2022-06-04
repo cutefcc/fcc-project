@@ -3,8 +3,9 @@ import { useImmer } from './useImmer';
 import { useMountedState } from './useMountedState';
 import { useLocalStorage } from './useLocalStorage';
 import { useAsyncFn } from './useAsyncFn';
-import useCookie from './useCookies';
-import useEffectOnce from './useEffectOnce';
+import { useCookie } from './useCookie';
+import { useEffectOnce } from './useEffectOnce';
+import { useUnMount } from './useUnMount';
 
 export {
   useImmer,
@@ -13,4 +14,5 @@ export {
   useAsyncFn,
   useCookie,
   useEffectOnce,
+  useUnMount,
 };
