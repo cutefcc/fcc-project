@@ -1,12 +1,13 @@
 // import FccHeader from "@components/Common/FccHeader";
-import Loading from "@components/Loading";
-import MainLayout from "@layouts/MainLayout";
-import TestJotai from "@pages/TestJotai";
-import { lazy, Suspense } from "react";
-const Home = lazy(() => import("@pages/Home"));
+import Loading from '@components/Loading';
+import MainLayout from '@layouts/MainLayout';
+import TestJotai from '@pages/TestJotai';
+import TestReactUse from '@pages/TestReactUse';
+import { lazy, Suspense } from 'react';
+const Home = lazy(() => import('@pages/Home'));
 //import Home from '@pages/Home';
-const Courses = lazy(() => import("@pages/Courses"));
-import { Link, RouteObject, useRoutes } from "react-router-dom";
+const Courses = lazy(() => import('@pages/Courses'));
+import { Link, RouteObject, useRoutes } from 'react-router-dom';
 const Routes: RouteObject[] = [];
 const Layout = () => (
   <Suspense fallback={<Loading />}>
@@ -36,20 +37,21 @@ function Course() {
   );
 }
 const mainRoutes = {
-  path: "/",
+  path: '/',
   element: <Layout />,
   children: [
     { index: true, element: <Home /> },
-    { path: "/testJotai", element: <TestJotai /> },
+    { path: '/testJotai', element: <TestJotai /> },
+    { path: '/testReactUse', element: <TestReactUse /> },
     {
-      path: "/courses",
+      path: '/courses',
       element: <Courses />,
       children: [
         { index: true, element: <Courses /> },
-        { path: "/courses/:id", element: <Course /> },
+        { path: '/courses/:id', element: <Course /> },
       ],
     },
-    { path: "*", element: <NoMatch /> },
+    { path: '*', element: <NoMatch /> },
   ],
 };
 

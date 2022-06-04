@@ -26,6 +26,7 @@
   "peerDependencies": {
     "immer": "^9.0.12",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "js-cookie": "^3.0.1"
   }
 }
