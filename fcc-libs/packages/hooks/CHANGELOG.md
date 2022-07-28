@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.6](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.5...@mmfcc/hooks@1.9.6) (2022-07-28)
+
+
+### Bug Fixes
+
+* package ([f4949ac](https://github.com/cutefcc/fcc-project/commit/f4949acada769e9d8149621157547f2b24f9b505))
+
+
+
+
+
 ## [1.9.5](https://github.com/cutefcc/fcc-project/compare/@mmfcc/hooks@1.9.4...@mmfcc/hooks@1.9.5) (2022-06-04)
 
 
